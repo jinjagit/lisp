@@ -5,5 +5,5 @@ Common Lisp
 https://lisp-lang.org/learn/getting-started/
 
 ## shell
-`$sbcl` open shell  
-*`(quit)` close shell  
+`$ sbcl` open shell  
+`* (quit)` close shell  
