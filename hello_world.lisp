@@ -1,14 +1,16 @@
 #!/usr/bin/sbcl --script
 
-;;;; some Lisp basics
-;;; note bash path in first line
+;;;; Hello World, with user input.
+;; note bash path in first line
 ;; grant file permissions. e.g. chmod 0755 hello_world.lisp 
-; run as for bash file: ./hello_world.lisp
+;; run: ./hello_world.lisp
 #||
 multiline comment
 ||#
 
 (format t "Hello World! ~%")
+
+(format t "I am Lisp. ~%")
 
 (format t "What's your name? ~%")
 
