@@ -2,14 +2,17 @@
 
 ;;;; equality
 
-;;; equality of symbols:
+;; discusion of difference between symbols and variable in Lisp
+;; https://stackoverflow.com/questions/3590221/what-is-the-difference-between-a-variable-and-a-symbol-in-lisp
+
+;; equality of symbols:
 
 (defparameter *name* 'Derek)
 
 (format t "(eq *name* 'Derek) = ~d ~%" (eq *name* 'Derek)) ; => (eq *name* 'Derek) = T
 
 
-;;; equality of non-symbols (and symbols):
+;; equality of non-symbols (and symbols):
 
 (format t "(equal 'car 'truck) = ~d ~%" (equal 'car 'truck)) ; => (equal 'car 'truck) = NIL
 
@@ -24,7 +27,7 @@
 (format t "(equal (list 1 2 3) (list 1 2 3)) = ~d ~%" (equal (list 1 2 3) (list 1 2 3))) ; => (equal (list 1 2 3) (list 1 2 3)) = NIL
 
 
-;;; equality of strings of any case, & of integers to floats:
+;; equality of strings of any case, & of integers to floats:
 
 (format t "(equalp 7 7.0) = ~d ~%" (equalp 7 7.0)) ; => (equalp 7 7.0) = T
 
