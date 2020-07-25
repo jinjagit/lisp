@@ -84,5 +84,5 @@
       ( (< *age* 18) ; else if
             (setf *college-ready* 'no)
             (format t "NOT ready for college ~%"))
-      (t (setf *college-ready* 'maybe)
-         (format t "Maybe ready for college ~%"))) ; else
+      (t (setf *college-ready* 'maybe) ; else
+         (format t "Maybe ready for college ~%")))
