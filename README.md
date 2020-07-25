@@ -2,7 +2,7 @@
 [Common Lisp (CL)](https://en.wikipedia.org/wiki/Common_Lisp)
 
 ## install & setup
-[Getting Started](https://lisp-lang.org/learn/getting-started/) - I installed SBCL & Quickslip, but not Emacs & SLIME  
+[Getting Started](https://lisp-lang.org/learn/getting-started/) - I installed SBCL & Quicklisp, but not Emacs & SLIME  
 [VS Code Lisp syntax extension](https://marketplace.visualstudio.com/items?itemName=mattn.Lisp)  
 [VS Code Rainbow brackets extension](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets) - parenthesis matching
 
