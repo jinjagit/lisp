@@ -68,13 +68,15 @@
 (when (= *age* 18)
   (setf *num-3* 18)
   (format t "Go to college, you're ~d ~%" *num-3*))
+; => Go to college, you're 18
 
 (unless (not (= *age* 18))
   (setf *num-3* 18)
   (format t "Go to college, you're ~d ~%" *num-3*))
+; => Go to college, you're 18
 
 
-;; cond statement:
+;;; cond statement:
 
 (defvar *college-ready* nil)
 
@@ -85,4 +87,6 @@
             (setf *college-ready* 'no)
             (format t "NOT ready for college ~%"))
       (t (setf *college-ready* 'maybe) ; else
-         (format t "Maybe ready for college ~%")))
+         (format t "Maybe ready for college ~%"))) ; => Maybe ready for college
+
+(format t "*college-ready* = ~d ~%" *college-ready*) ; => *college-ready* = MAYBE
