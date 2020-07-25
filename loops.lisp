@@ -37,5 +37,3 @@
 
 (terpri) ; print newline
 (terpri) ; print newline
-
-
