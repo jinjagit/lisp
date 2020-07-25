@@ -78,7 +78,7 @@
 
 (defvar *college-ready* nil)
 
-(cond ( (>= *age* 21) ;if
+(cond ( (>= *age* 21) ; if
             (setf *college-ready* 'yes)
             (format t "Ready for college ~%"))
       ( (< *age* 18) ; else if
