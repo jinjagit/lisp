@@ -51,14 +51,14 @@
 
 
 
-; get item at specified position (index):
+;; get item at specified position (index):
 
 (format t "3rd item in list = ~a ~%" (nth 2 *nums*)) ; => 4
 
 (format t "1st item in list = ~a ~%" (nth 0 *nums*)) ; => 1
 
 
-; plists - use symbols to describe data (appears similar to key : value pairs)
+;; plists - use symbols to describe data (appears similar to key : value pairs)
 
 (defvar superman (list :name "Superman" :secret-id "Clark Kent"))
 
