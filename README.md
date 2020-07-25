@@ -15,11 +15,11 @@ note bash path in first line (find correct path with `$ which sbcl`)
 grant file permissions. e.g. `$ chmod 0755 hello_world.lisp`   
 run: `$ ./hello_world.lisp`  
 
-## tutorials
+## tutorials & lectures
 [Lisp Tutorial](https://www.youtube.com/watch?v=ymSq4wHrqyU) - video: 1h15m  
 [Overview & Intro. to Lisp - Gerald Sussman, 1987](https://www.youtube.com/watch?v=-J_xL4IGhJA&list=PLE18841CABEA24090) - MIT, published 2005, video: 1h12m  
 
-## documentation / resources
+## documentation & resources
 [Common Lisp HyperSpec, 2005](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)  
 [SBCL User Manual - SBCL version 1.4.5, 2018](http://students.mimuw.edu.pl/~zbyszek/lisp/doc/sbcl.pdf)  
 [Practical Common Lisp - Peter Seibel, 2005](http://www.gigamonkeys.com/book/)  
