@@ -1,6 +1,6 @@
 #!/usr/bin/sbcl --script
 
-;;;; some LISP basics
+;;;; some Lisp basics
 ;;; note bash path in first line
 ;; grant file permissions. e.g. chmod 0755 test.lisp 
 ; run as for bash file: ./test.lisp
