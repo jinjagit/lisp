@@ -2,8 +2,8 @@
 
 ;;;; some Lisp basics
 ;;; note bash path in first line
-;; grant file permissions. e.g. chmod 0755 test.lisp 
-; run as for bash file: ./test.lisp
+;; grant file permissions. e.g. chmod 0755 hello_world.lisp 
+; run as for bash file: ./hello_world.lisp
 #||
 multiline comment
 ||#
