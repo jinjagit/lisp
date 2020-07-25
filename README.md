@@ -24,7 +24,7 @@ run: `$ ./hello_world.lisp`
 [SBCL User Manual - SBCL version 1.4.5, 2018](http://students.mimuw.edu.pl/~zbyszek/lisp/doc/sbcl.pdf)  
 [Practical Common Lisp - Peter Seibel, 2005](http://www.gigamonkeys.com/book/)  
 [Common Lisp Style Guide](https://google.github.io/styleguide/lispguide.xml)  
-[Lisp Symbols vs. variables](https://stackoverflow.com/questions/3590221/what-is-the-difference-between-a-variable-and-a-symbol-in-lisp) - Stackoverflow thread  
+[Lisp Symbols vs. Variables](https://stackoverflow.com/questions/3590221/what-is-the-difference-between-a-variable-and-a-symbol-in-lisp) - Stackoverflow thread  
  
 
 ## historical
