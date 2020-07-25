@@ -8,7 +8,7 @@
 multiline comment
 ||#
 
- (format t "Hello World! ~%")
+(format t "Hello World! ~%")
 
 (format t "What's your name? ~%")
 
