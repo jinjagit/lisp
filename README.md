@@ -9,6 +9,6 @@ https://lisp-lang.org/learn/getting-started/
 `* (quit)` close shell  
 
 ## run
-note bash path in first line (find correct path with `which sbcl`)
-grant file permissions. e.g. `chmod 0755 hello_world.lisp` 
-run as for bash file: `./hello_world.lisp`
+note bash path in first line (find correct path with `$ which sbcl`)
+grant file permissions. e.g. `$ chmod 0755 hello_world.lisp` 
+run as for bash file: `$ ./hello_world.lisp`
