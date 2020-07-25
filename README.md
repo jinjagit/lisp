@@ -1,5 +1,6 @@
 # Lisp
 [Common Lisp (CL)](https://en.wikipedia.org/wiki/Common_Lisp)
+[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language))
 
 ## install & setup
 [Getting Started](https://lisp-lang.org/learn/getting-started/) - I installed SBCL & Quicklisp, but not Emacs & SLIME  
