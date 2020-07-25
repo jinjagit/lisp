@@ -2,7 +2,7 @@
 
 ;;;; equality
 
-;; discusion of difference between symbols and variable in Lisp
+;; discusion of difference between symbols and variables in Lisp
 ;; https://stackoverflow.com/questions/3590221/what-is-the-difference-between-a-variable-and-a-symbol-in-lisp
 
 ;; equality of symbols:
