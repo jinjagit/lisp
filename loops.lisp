@@ -14,7 +14,7 @@
 (loop
   (format t "~d ~%" i)
   (setq i (+ i 1))
-  (when (> i 10) (return i)))
+  (when (> i 10) (return i))) ; when 10 > i
 
 (terpri) ; print newline
 
