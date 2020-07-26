@@ -30,5 +30,5 @@ run: `$ ./hello_world.lisp`
 
 ## historical
 [Lisp 1.5 Programmer's Manual, 1962](http://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf) - Page 13, especially the 'eval' function, contains the fundamentals of the language.  
-[Let's Lisp like it's 1959 - Kristoffer Gronland](https://www.youtube.com/watch?v=F140RNyuKXg) - Background early history  
+[Let's Lisp like it's 1959 - Kristoffer Gronland](https://www.youtube.com/watch?v=F140RNyuKXg) - Background early history, video 44m  
 
