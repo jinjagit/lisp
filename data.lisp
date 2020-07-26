@@ -2,6 +2,7 @@
 
 ;;;; data structures:
 
+
 (setq *print-case* :capitalize)
 
 
@@ -65,4 +66,3 @@
 ; => #S(Customer :Name "Paul Smith" :Address "67 High St." :Id 1000)
 
 (terpri)
-
