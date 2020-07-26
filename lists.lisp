@@ -78,3 +78,8 @@
 
 ; => Name : Batman   Secret-Id : Bruce Wayne    
 ;    Name : Superman   Secret-Id : Clark Kent
+
+
+
+;;; association lists:
+

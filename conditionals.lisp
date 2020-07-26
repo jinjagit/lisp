@@ -61,7 +61,7 @@
 (terpri) ; prints newline after output
 
 
-;;; when statement:
+;;; when and unless statements:
 
 (setf *age* 18)
 
