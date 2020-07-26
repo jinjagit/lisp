@@ -17,7 +17,7 @@ multiline comment
 (defvar *name* (read))
 
 (defun hello-you (*name*)
-  (format t "Hello ~@a! ~%" *name*))
+  (format t "Hello ~a! ~%" *name*))
 
 ;;; ~a shows the value
 ;;; ~s shows quotes around the value
