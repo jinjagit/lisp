@@ -2,8 +2,8 @@
 
 ;;;; Hello World, with user input.
 ;; note bash path in first line
-;; grant file permissions. e.g. chmod 0755 hello_world.lisp 
-;; run: ./hello_world.lisp
+;; grant file permissions. e.g. $ chmod 0755 hello_world.lisp 
+;; run: $ ./hello_world.lisp
 #||
 multiline comment
 ||#
