@@ -86,7 +86,7 @@
 (defparameter *heroes*
   '((Superman (Clark Kent))
   (Flash (Barry Allen))
-  (Batman (Bruce wayne))))
+  (Batman (Bruce Wayne))))
 
 (format t "Superman Data ~a ~%" (assoc 'superman *heroes*))
 
