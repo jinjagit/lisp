@@ -2,8 +2,6 @@
 
 ;;;; formatting data values:
 
-;;; (not to be conflated with the 'format' command use here to print to terminal)
-
 (format t "Number with commas ~:d ~%" 10000000) ; => 10,000,000
 
 (format t "PI to 5 characters ~5f ~%" 3.141593) ; => 3.142
