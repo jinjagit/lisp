@@ -65,7 +65,6 @@
 (format t "Sum = ~a ~%" (sum 1 2 3 4 5 6 7)) ; => Sum = 28
 
 
-
 ;;; multiple return values:
 
 (defun exponents (num)
@@ -75,7 +74,6 @@
   (format t "2^2 = ~d   2^3 = ~d ~%" a b))
 
 ; => 2^2 = 4   2^3 = 8
-
 
 
 ;; quasi-quoting allows switching from code to data mode:
@@ -125,7 +123,6 @@
 ; => double & triple 3 = 18
 
 
-
 ;;; higher-order functions - (can use functions as if they are data):
 
 (defun times-3 (x) (* 3 x))
@@ -138,7 +135,6 @@
 (multiples #'times-3 10) ; #' passes in the function
 (terpri)
 (multiples #'times-4 10)
-
 
 
 ;;; anonymous lambda functions:
