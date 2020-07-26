@@ -1,6 +1,8 @@
 #!/usr/bin/sbcl --script
 
-;;;; formats of data values
+;;;; formatting data values:
+
+;;; (not to be conflated with the 'format' command use here to print to terminal)
 
 (format t "Number with commas ~:d ~%" 10000000) ; => 10,000,000
 
