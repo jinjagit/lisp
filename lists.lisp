@@ -42,13 +42,11 @@
 (format t "~a ~%" *phrase*)
 
 
-
 (defparameter *nums* '(2 4 6))
 
 (push 1 *nums*)
 
 (format t "~a ~%" *nums*) ; => (1 2 4 6)
-
 
 
 ;; get item at specified position (index):
