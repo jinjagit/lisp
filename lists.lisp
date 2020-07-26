@@ -61,7 +61,6 @@
 ;; plists - use symbols to describe data (appears similar to key : value pairs)
 
 (defvar superman (list :name "Superman" :secret-id "Clark Kent"))
-
 (defvar batman (list :name "Batman" :secret-id "Bruce Wayne"))
 
 (defvar *hero-list* nil)
