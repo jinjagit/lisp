@@ -135,6 +135,25 @@
   (dotimes (x max-num)
     (format t "~d : ~d ~%" x (funcall mult-func x))))
 
-(multiples #'times-3 10)
+(multiples #'times-3 10) ; #' passes in the function
 (terpri)
 (multiples #'times-4 10)
+
+
+
+;;; anonymous lambda functions:
+
+(mapcar (lambda (x) (print (* x 2))) '(1 2 3 4 5))
+
+(terpri)
+
+
+#|| 
+http://www.lispworks.com/documentation/HyperSpec/Body/f_mapc_.htm
+
+mapcar operates on successive elements of the lists. function is applied to the first
+element of each list, then to the second element of each list, and so on.
+The iteration terminates when the shortest list runs out, and excess elements in other
+lists are ignored. The value returned by mapcar is a list of the results of successive
+calls to function.
+||#
