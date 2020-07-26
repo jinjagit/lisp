@@ -24,8 +24,7 @@
 (defclass mammal ()
   ((name
       :initarg :name
-      :initform (error "Must provide a name")
-      :accessor mammal-name)
+      :initform (error "Must provide a name"))
   (sound
       :initarg :sound
       :initform "No sound"
@@ -46,9 +45,40 @@
   (slot-value *mouse* 'name)
   (slot-value *mouse* 'sound)) ; Mute Mickey says No sound
 
-(setf (mammal-name *mouse*) "Vocal Mickey")
+; because we set an accessor for sound, we can set this directly:
+
 (setf (mammal-sound *mouse*) "Eeek!")
+
+; we will need to create getters and setters for :name, however;
+
+(defgeneric (setf mammal-name) (value the-mammal))
+
+(defmethod (setf mammal-name) (value (the-mammal mammal))
+  (setf (slot-value the-mammal 'name) value))
+
+(defgeneric mammal-name (the-mammal))
+
+(defmethod mammal-name ((the-mammal mammal))
+  (slot-value the-mammal 'name ))
+
+(setf (mammal-name *mouse*) "Vocal Micky")  
 
 (format t "~a says ~a ~%"
   (slot-value *mouse* 'name)
   (slot-value *mouse* 'sound)) ; Vocal Mickey says Eeek!
+
+; we can also use our getter to get the name (though we seemed to be able to get it in any case)
+
+(format t "I am ~a ~%" (mammal-name *mouse*)) ; => I am Vocal Micky
+
+
+;;; inheritence
+
+(defclass dog (mammal) ())
+
+(defparameter *rover*
+  (make-instance 'dog :name "Rover" :sound "Woof!"))
+
+(format t "~a says ~a ~%"
+  (slot-value *rover* 'name)
+  (slot-value *rover* 'sound))
