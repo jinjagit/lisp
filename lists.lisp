@@ -77,7 +77,7 @@
 ; => NAME : Batman   SECRET-ID : Bruce Wayne    
 ;    NAME : Superman   SECRET-ID : Clark Kent 
 
-;; Note, if we had done (setq *print-case* :capitalize) before running the above, we get:
+;; Note, if we have (setq *print-case* :capitalize) before the above dolist operation, we get:
 
 ; => Name : Batman   Secret-Id : Bruce Wayne    
 ;    Name : Superman   Secret-Id : Clark Kent
