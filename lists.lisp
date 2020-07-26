@@ -66,20 +66,35 @@
 (push superman *hero-list*)
 (push batman *hero-list*)
 
-; (setq *print-case* :capitalize) ; see notes, below, at end of file
+(setq *print-case* :capitalize) ; see notes, below, at end of file
 
 (dolist (hero *hero-list*)
   (format t "~{~a : ~a   ~} ~%" hero))
 
-; => NAME : Batman   SECRET-ID : Bruce Wayne    
-;    NAME : Superman   SECRET-ID : Clark Kent 
-
-;; Note, if we have (setq *print-case* :capitalize) before the above dolist operation, we get:
-
 ; => Name : Batman   Secret-Id : Bruce Wayne    
-;    Name : Superman   Secret-Id : Clark Kent
+;    Name : Superman   Secret-Id : Clark Kent 
+
+;; Note, if we do not have (setq *print-case* :capitalize) before the above dolist operation, we get:
+
+; => NAME : Batman   SECRET-ID : Bruce Wayne    
+;    NAME : Superman   SECRET-ID : Clark Kent
 
 
 
 ;;; association lists:
+
+(defparameter *heroes*
+  '((Superman (Clark Kent))
+  (Flash (Barry Allen))
+  (Batman (Bruce wayne))))
+
+(format t "Superman Data ~a ~%" (assoc 'superman *heroes*))
+
+; => Superman Data (Superman (Clark Kent))
+
+
+(format t "Superman is ~a ~%" (cadr (assoc 'superman *heroes*)))
+
+; => Superman is (Clark Kent)
+
 
