@@ -50,4 +50,4 @@
 
 (format t "(null 2) = ~d ~%" (null 2)) ; => (null 2) = NIL
 
-;;;; sin, cos, tan, asin, acos, atan, etc.
+;;; sin, cos, tan, asin, acos, atan, etc.
