@@ -77,3 +77,26 @@
   `(,(caar size) is ,(cadar size) and ,(cddar size))))
 
 (get-hero-data *hero-size*) ; => (Superman Is (6ft 3in) And ((230lbs)))
+
+
+;;; run function against each item in list:
+
+(format t "A number? ~a ~%" (mapcar #'numberp '(1 2 3 f g)))
+
+; => A number? (T T T Nil Nil)
+
+
+;;; define function only in local scope:
+
+; (flet ((func-name (arguments)
+;   (function body))
+;   (body)))
+
+(flet ((double-it (num)
+  (* num 2))
+  (triple-it (num)
+  (* num 3)))
+  (format t "double & triple 10 = ~a ~%" (triple-it(double-it 10))))
+
+; => double & triple 10 = 60
+
