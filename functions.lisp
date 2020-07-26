@@ -65,6 +65,19 @@
 (format t "Sum = ~a ~%" (sum 1 2 3 4 5 6 7)) ; => Sum = 28
 
 
+
+;;; multiple return values:
+
+(defun exponents (num)
+  (values (expt num 2) (expt num 3)))
+
+(multiple-value-bind (a b) (exponents 2)
+  (format t "2^2 = ~d   2^3 = ~d ~%" a b))
+
+; => 2^2 = 4   2^3 = 8
+
+
+
 ;; quasi-quoting allows switching from code to data mode:
 
 (defparameter *hero-size*
@@ -100,3 +113,28 @@
 
 ; => double & triple 10 = 60
 
+
+;; using labels in local functions:
+
+(labels ((double-it (num)
+    (* num 2))
+  (triple-it (num)
+    (* (double-it num) 3)))
+  (format t "double & triple 3 = ~a ~%" (triple-it 3)))
+
+; => double & triple 3 = 18
+
+
+
+;;; higher-order functions - (can use functions as if they are data):
+
+(defun times-3 (x) (* 3 x))
+(defun times-4 (x) (* 4 x))
+
+(defun multiples (mult-func max-num)
+  (dotimes (x max-num)
+    (format t "~d : ~d ~%" x (funcall mult-func x))))
+
+(multiples #'times-3 10)
+(terpri)
+(multiples #'times-4 10)
